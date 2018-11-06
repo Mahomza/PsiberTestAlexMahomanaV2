@@ -46,20 +46,21 @@
 					property="age" />
 			</div>
 			<div class="form-group">
-				<label for="pwd">Tax Year:</label>
+				<label for="taxYear">Tax Year:</label>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="taxYear" />
 			</div>
 			<div class="form-group">
-				<label for="pwd">Total Taxable Income:</label>
+				<label for="totaltaxableIncome">Total Taxable Income:</label>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="totaltaxableIncome" />
 			</div>
-			<div class="checkbox">
-				<input type="checkbox" name="IsMonthly">
+			<div class="form-group">
+			    <label for="IsMonthly">IsMonthly:</label>
+				<input type="checkbox" name="IsMonthly"/>
 			</div>
 			<div class="form-group">
-				<label for="pwd">Medical Aid:</label>
+				<label for="madicalAid">Medical Aid:</label>
 				<html:text name="taxCalculatorForm" property="madicalAid" />
 			</div>
 			<html:submit styleClass="btn btn-default" value="Calculate" />
