@@ -19,7 +19,6 @@ import com.model.User;
 import com.service.RebateService;
 
 public class taxCalculatorAction extends org.apache.struts.action.Action {
-
 	/* forward name="success" path="" */
 	private static final String TAX_DECIMAL_FORMAT = "R####0.00";
 	private final static String SUCCESS = "success";

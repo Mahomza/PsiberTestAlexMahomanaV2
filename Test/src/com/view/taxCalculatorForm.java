@@ -100,7 +100,6 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	public void setTotaltaxableIncome(int totaltaxableIncome) {
 		this.totaltaxableIncome = totaltaxableIncome;
 	}
-	
 
 	public int getAge() {
 		return age;
@@ -117,7 +116,7 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	public void settaxYear(int taxYear) {
 		this.taxYear = taxYear;
 	}
-	
+
 	public int getNumofMedicalAidMember() {
 		return numofMedicalAidMember;
 	}
@@ -125,7 +124,6 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	public void setNumofMedicalAidMember(int numofMedicalAidMember) {
 		this.numofMedicalAidMember = numofMedicalAidMember;
 	}
-
 
 	public String getMonthlyPAYE() {
 		return monthlyPAYE;

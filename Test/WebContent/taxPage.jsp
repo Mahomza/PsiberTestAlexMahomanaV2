@@ -47,7 +47,6 @@
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="age" />
 			</div>
-
 			<div class="input-group">
 				<span class="input-group-addon">Tax Year</span>
 				<html:select name="taxCalculatorForm" property="taxYear"

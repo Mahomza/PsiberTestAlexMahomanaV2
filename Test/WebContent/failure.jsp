@@ -15,6 +15,7 @@
 <title>JSP Page</title>
 </head>
 <body>
+
 	<div style="color: red">
 		<h1>
 			Invalid age
@@ -30,7 +31,7 @@
 		</h1>
 		<h1>
 			Invalid numOfMedicalAidMember
-			<bean:write name="taxCalculatorForm" property="numOfMedicalAidMember"></bean:write>
+			<bean:write name="taxCalculatorForm" property="numofMedicalAidMember"></bean:write>
 		</h1>
 	</div>
 </body>
