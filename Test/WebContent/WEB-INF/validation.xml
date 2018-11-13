@@ -47,7 +47,7 @@
     <formset language="fr">
 
         <constant>
-            <constant-name>postalCode</constant-name>
+            <constant-name>numOfMedicalAidMember</constant-name>
             <constant-value>^[0-9a-zA-Z]*$</constant-value>
         </constant>
 

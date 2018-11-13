@@ -41,16 +41,14 @@
 		</nav>
 
 		<html:form action="/taxCalculator">
-			<!-- 		<div class="form-group">
-				<label for="age">Age:</label> -->
+
 			<div class="input-group">
 				<span class="input-group-addon">Age</span>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="age" />
 			</div>
-		<!-- 	<div class="form-group">
-				<label for="taxYear">Tax Year:</label> -->
-								<div class="input-group">
+
+			<div class="input-group">
 				<span class="input-group-addon">Tax Year</span>
 				<html:select name="taxCalculatorForm" property="taxYear"
 					styleClass="form-control">
@@ -60,26 +58,24 @@
 				</html:select>
 
 			</div>
-			<!-- <div class="form-group">
-				<label for="totaltaxableIncome">Total Taxable Income:</label> -->
-				<div class="input-group">
+
+			<div class="input-group">
 				<span class="input-group-addon">Total Taxable Income</span>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="totaltaxableIncome" />
 			</div>
-		<!-- 	<div class="form-group">
-				<label for="isMonthly">IsMonthly:</label> -->
-							<div class="input-group">
+
+			<div class="input-group">
 				<span class="input-group-addon">IsMonthly</span>
 				<html:checkbox name="taxCalculatorForm"
 					styleClass="custom-control-input" property="isMonthly" />
 
 			</div>
-			
+
 			<div class="input-group">
-				<span class="input-group-addon">Medical Aid</span>
+				<span class="input-group-addon">Number Of Medical Aid Members</span>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
-					property="numOfMedicalAidMember" />
+					property="numofMedicalAidMember" />
 			</div>
 			<html:submit styleClass="btn btn-primary" value="Calculate" />
 
