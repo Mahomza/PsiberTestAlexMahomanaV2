@@ -7,7 +7,7 @@
 
 <struts-config>
     <form-beans>
-        <form-bean name="taxCalculatorForm" type="com.vaannila.taxCalculatorForm"/>
+        <form-bean name="taxCalculatorForm" type="com.view.taxCalculatorForm"/>
     
     </form-beans>
     
@@ -20,7 +20,7 @@
     </global-forwards>
 
     <action-mappings>
-        <action input="/taxPage.jsp" name="taxCalculatorForm" path="/taxCalculator" scope="session" type="com.vaannila.taxCalculatorAction">
+        <action input="/taxPage.jsp" name="taxCalculatorForm" path="/taxCalculator" scope="session" type="com.view.taxCalculatorAction">
             <forward name="success" path="/success.jsp" />
             <forward name="failure" path="/failure.jsp" />
         </action>
@@ -29,7 +29,8 @@
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
 
-    <message-resources parameter="com/vaannila/ApplicationResource"/>
+    <message-resources parameter="com/view/ApplicationResource"/>
+   
     
     <!-- ========================= Tiles plugin ===============================-->
     <!--

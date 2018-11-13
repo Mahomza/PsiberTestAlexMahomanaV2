@@ -28,42 +28,60 @@
 	<div style="color: red">
 		<html:errors />
 	</div>
-	<%--         <html:form action="/taxCalculator" >
-            Age : <html:text name="taxCalculatorForm" property="age" /> <br>
-            Tax Year : <html:text name="taxCalculatorForm" property="taxYear" /> <br>
-            Total Taxable Income : <html:text name="taxCalculatorForm" property="totaltaxableIncome" /> <br>
-            IsMonthly : <input type="checkbox" name="IsMonthly"><br>
-            Medical Aid : <html:text name="taxCalculatorForm" property="madicalAid" /> <br>
-        <html:submit value="Calculate" />
-        </html:form> --%>
+
 
 	<div class="container">
-		<h2>Tax Income Calculation Form</h2>
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Tax Income Calculation</a>
+			</div>
+
+		</div>
+		</nav>
+
 		<html:form action="/taxCalculator">
-			<div class="form-group">
-				<label for="age">Age:</label>
+			<!-- 		<div class="form-group">
+				<label for="age">Age:</label> -->
+			<div class="input-group">
+				<span class="input-group-addon">Age</span>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="age" />
 			</div>
-			<div class="form-group">
-				<label for="taxYear">Tax Year:</label>
-				<html:text name="taxCalculatorForm" styleClass="form-control"
-					property="taxYear" />
+		<!-- 	<div class="form-group">
+				<label for="taxYear">Tax Year:</label> -->
+								<div class="input-group">
+				<span class="input-group-addon">Tax Year</span>
+				<html:select name="taxCalculatorForm" property="taxYear"
+					styleClass="form-control">
+					<html:option value="-1">Select Year</html:option>
+					<html:option value="2017">2017</html:option>
+					<html:option value="2018">2018</html:option>
+				</html:select>
+
 			</div>
-			<div class="form-group">
-				<label for="totaltaxableIncome">Total Taxable Income:</label>
+			<!-- <div class="form-group">
+				<label for="totaltaxableIncome">Total Taxable Income:</label> -->
+				<div class="input-group">
+				<span class="input-group-addon">Total Taxable Income</span>
 				<html:text name="taxCalculatorForm" styleClass="form-control"
 					property="totaltaxableIncome" />
 			</div>
-			<div class="form-group">
-			    <label for="IsMonthly">IsMonthly:</label>
-				<input type="checkbox" name="IsMonthly"/>
+		<!-- 	<div class="form-group">
+				<label for="isMonthly">IsMonthly:</label> -->
+							<div class="input-group">
+				<span class="input-group-addon">IsMonthly</span>
+				<html:checkbox name="taxCalculatorForm"
+					styleClass="custom-control-input" property="isMonthly" />
+
 			</div>
-			<div class="form-group">
-				<label for="madicalAid">Medical Aid:</label>
-				<html:text name="taxCalculatorForm" property="madicalAid" />
+			
+			<div class="input-group">
+				<span class="input-group-addon">Medical Aid</span>
+				<html:text name="taxCalculatorForm" styleClass="form-control"
+					property="numOfMedicalAidMember" />
 			</div>
-			<html:submit styleClass="btn btn-default" value="Calculate" />
+			<html:submit styleClass="btn btn-primary" value="Calculate" />
 
 		</html:form>
 	</div>
