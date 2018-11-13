@@ -22,8 +22,8 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	private int taxYear;
 	private int age;
 	private int totaltaxableIncome;
+	private int numofMedicalAidMember;
 	private String isMonthly;
-	private int numOfMedicalAidMember;
 	private String monthlyPAYE;
 	private String annualPAYE;
 	private String taxCredits;
@@ -40,13 +40,13 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 		ActionErrors errors = new ActionErrors();
 		boolean isNumeric = false;
 
-		isNumeric = String.valueOf(numOfMedicalAidMember).chars().allMatch(Character::isDigit);
+		isNumeric = String.valueOf(numofMedicalAidMember).chars().allMatch(Character::isDigit);
 		if (!isNumeric) {
-			errors.add("numOfMedicalAidMember", new ActionMessage("error.numOfMedicalAidMember.integer"));
+			errors.add("numofMedicalAidMember", new ActionMessage("error.numOfMedicalAidMember.integer"));
 			// TODO: add 'error.name.required' key to your resources
 		}
-		if (numOfMedicalAidMember < 0) {
-			errors.add("numOfMedicalAidMember", new ActionMessage("error.numOfMedicalAidMember.integer"));
+		if (numofMedicalAidMember < 0) {
+			errors.add("numofMedicalAidMember", new ActionMessage("error.numOfMedicalAidMember.integer"));
 			// TODO: add 'error.name.required' key to your resources
 		}
 
@@ -100,6 +100,7 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	public void setTotaltaxableIncome(int totaltaxableIncome) {
 		this.totaltaxableIncome = totaltaxableIncome;
 	}
+	
 
 	public int getAge() {
 		return age;
@@ -116,14 +117,15 @@ public class taxCalculatorForm extends org.apache.struts.action.ActionForm {
 	public void settaxYear(int taxYear) {
 		this.taxYear = taxYear;
 	}
-
-	public int getNumOfMedicalAidMember() {
-		return numOfMedicalAidMember;
+	
+	public int getNumofMedicalAidMember() {
+		return numofMedicalAidMember;
 	}
 
-	public void setNumOfMedicalAidMember(int numOfMedicalAidMember) {
-		this.numOfMedicalAidMember = numOfMedicalAidMember;
+	public void setNumofMedicalAidMember(int numofMedicalAidMember) {
+		this.numofMedicalAidMember = numofMedicalAidMember;
 	}
+
 
 	public String getMonthlyPAYE() {
 		return monthlyPAYE;

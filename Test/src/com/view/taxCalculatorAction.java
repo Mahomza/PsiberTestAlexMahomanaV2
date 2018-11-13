@@ -43,7 +43,7 @@ public class taxCalculatorAction extends org.apache.struts.action.Action {
 			double totaltaxableIncome = 0;
 			User user = new User();
 			user.setAge(tForm.getAge());
-			user.setNumOfMedicalAidMember(tForm.getNumOfMedicalAidMember());
+			user.setNumOfMedicalAidMember(tForm.getNumofMedicalAidMember());
 			user.setIsMothly(String.valueOf(tForm.getIsMonthly()));
 			user.setTotaltaxableIncome(tForm.getTotaltaxableIncome());
 			user.settaxYear(tForm.gettaxYear());
